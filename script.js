@@ -177,7 +177,7 @@ var getUVI = function(uvi) {
         weatherUviVal.style.color = 'white';
         weatherUviVal.style.backgroundColor = 'green';
     }
-    if (3 < uvi <= 7) {
+    if (3 < uvi && uvi <= 7) {
         weatherUviVal.style.color = 'white';
         weatherUviVal.style.backgroundColor = 'orange';
     }
