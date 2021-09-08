@@ -73,7 +73,7 @@ function showUserInput() {
 // }
 
 var getWeather = function (city) {
-    var apiURL ='http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=imperial&appid=' + APIKey;
+    var apiURL ='https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=imperial&appid=' + APIKey;
 
      fetch(apiURL).then(function (response) {    
          if (response.ok) {
