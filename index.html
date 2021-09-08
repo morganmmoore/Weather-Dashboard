@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Weather Dashboard</title>
+</head>
+
+<body class="flex-column min-100-vh">
+  <header class="hero">
+    <h1 class="app-title"><i class="fas fa-rainbow"></i> Weather Dashboard</h1>
+  </header>
+
+
+  <main class="flex-row justify-space-between">
+    <div class="col-12 col-md-4">
+
+        <section class="top-banner">
+            <div class="container">
+              <h1 class="heading"></h1>
+              <form id="user-form">
+                <p>Enter a city below to view the today's weather and a five day forecast.</p>
+                <input id="city" type="text" placeholder="Search for a city" autofocus>
+                <button type="submit">SEARCH</button>
+                <section class="ajax-section">
+                  <div class="city-container">
+                    <ul class="cities"></ul>
+                  </div>
+              </section>
+              </form>
+            </div>
+          </section>
+      <section>
+        <div id="current-weather" class="card">
+          <div class="weather-icon"></div>
+        </div>
+        <div id="five-day"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
